@@ -5,3 +5,92 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+html{
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+nav{
+    height: 100px;
+    width: 100%;
+    max-width: 1600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.nav__logo{
+    display: flex;
+    align-items: center;
+}
+
+.nav__logo--wrapper{
+    width: 40px;
+    height: 40px;
+}
+
+.nav__logo--img{
+    width: 100%;
+}
+
+.nav__logo--name{
+    padding-left: 12px;
+    font-size: 24px;
+    font-weight: bold;
+    transition: all 200ms ease;
+}
+
+.nav__logo:hover .nav__logo--name{
+    color: #6030b1;
+}
+
+
+
+
+
+.nav__info{
+    display: flex;
+}
+
+.nav__link{
+    padding-left: 36px;
+}
+
+.nav__account{
+    padding-left: 54px;
+}
+
+.nav__account--login{
+    margin-right: 12px;
+}
+
+.nav__account--signup{
+    background-color: #6030b1;
+    padding: 12px 24px;
+    border-radius: 50px;
+    color: white;
+    transition: all 200ms;
+}
+
+.nav__account--signup:hover{
+    background-color: #5015b7;
+}
+
+
+
+
+.section__figure{
+    height: 400px;
+    width: 400px;
+}
+
+.section__img{
+    width: 100%;
+}
