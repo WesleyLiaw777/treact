@@ -411,8 +411,9 @@ nav{
     flex-direction: column;
     align-items: center;
     border-radius: 8px;
-    padding: 12px 0px;
+    padding-bottom: 12px;
     border: 2px solid #e3dede;
+    border-top: 0px;
 }
 
 .pricing__business{
@@ -467,9 +468,11 @@ hr.solid__row{
     color:#918f8f;
 }
 
-
-.pricing__personal{
-    border-top: 10px solid #73e8c1;
+.gradient__border{
+    height: 12px;
+    width: 100%;
+    background: linear-gradient(to right, #73e8c1, red);
+    border-radius: 999px;
 }
 
 .pricing__enterprise{
@@ -487,7 +490,6 @@ hr.solid__row{
 
 .pricing__buynow:hover{
     box-shadow: -2px 5px 16px rgba(0,0,0,0.2);
-    /* transform: translateY(-2px); */
     transform: translate(1px, -1px);
 
 }
