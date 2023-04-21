@@ -19,12 +19,17 @@ a{
     color: #5015b7;
 }
 
-::placeholder{
-    color: rgba(121, 121, 121, 0.924);
+.detail__para{
+    color: #918f8f;
+    line-height: 28px;
 }
 
-section{
-    margin-bottom: 70px;
+::placeholder{
+    color: #918f8f;
+}
+
+section:not(:first-child){
+    margin-bottom: 200px;
 }
 
 .row{
@@ -33,38 +38,46 @@ section{
     margin: 0 auto;
 }
 
-.center__row{
+.vert__row{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.section__info{
-    margin-right: 30px;
-    width: 40%;
+.horiz__row{
+    display: flex;
+    justify-content: space-between;
 }
 
 .section__name{
-    text-align: center;
     color:#5015b7;
     font-weight: bold;
     margin-bottom: 24px;
 }
 
+.name__vert{
+    text-align: center;
+}
+
 .section__heading{
-    font-size: 48px;
+    font-size: 56px;
     margin-bottom: 24px;
 }
 
 .section__para{
     font-weight: 400;
+    color: #918f8f;
     font-size: 18px;
-    margin-bottom: 32px;
+    margin-bottom: 36px;
 }
 
 .section__figure{
-    width: 750px;
+    width: 600px;
 }
+
+/* .section__figure:not(:first-child){
+    width: 50%;
+} */
 
 .section__img{
     width: 100%;
@@ -74,8 +87,17 @@ section{
     min-height: 100vh;
 }
 
-.center__heading{
+.vert__heading{
     text-align: center;
+}
+
+.learn__more--button{
+    background-color: #5015b7;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-weight: 500;
+
 }
 
 /* NAV */
@@ -163,17 +185,23 @@ nav{
     display: flex;
 }
 
+.landing__info{
+    margin-right: 30px;
+    width: 40%;
+}
+
 .landing__start{
     position: relative;
+    display: flex;
+    justify-content: left;
 }
 
 .landing__email{
     border: 2px solid lightgrey;
     border-radius: 50px;
-    padding: 24px 100px;
-    border-color: rgb(211, 211, 211, 0.3);
+    padding: 24px 200px 24px 30px;
+    border-color: #d3d3d34d;
     transition: all 300ms;
-    overflow: hidden;
 }
 
 .landing__email:hover{
@@ -187,8 +215,8 @@ nav{
     border-radius: 50px;
     padding: 16px 16px;
     position: absolute;
-    top: 9%;
-    transform: translateX(-125px);
+    top: 13%;
+    transform: translateX(260px);
     transform: all 300ms;
 }
 
@@ -210,4 +238,146 @@ nav{
 .companies__img{
     width: 100%;
     opacity: 0.6;
+}
+
+/* FEATURES */
+
+.features__listing{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1000px;
+    margin-top: 60px;
+}
+
+.feature{
+    width: 30%;
+    display: flex;
+    margin-right: 30px;
+    margin-bottom: 70px;
+}
+
+.feature__info{
+    display: flex;
+    flex-direction: column;
+    margin-left: 12px;
+}
+
+.feature__icon{
+    border: 1px solid lightgrey;
+    color: #5015b7;
+    padding: 20px;
+    font-size: 20px;
+    height: 60px;
+    border-radius: 50px;
+}
+
+.feature__title{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.feature__desc{
+    font-weight: 500;
+    color: #918f8f;
+    font-size: 16px;
+    line-height: 34px;
+}
+
+/* QUALITY WORK */
+
+.work__info{
+    width: 50%;
+    margin-right: 60px;
+}
+
+/* STEPS */
+
+.steps__figure{
+    padding-top: 50px;
+}
+
+.step__list{
+    margin-top: 40px;
+}
+
+.step{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.step__number{
+    color: #918f8f;
+    font-size: 36px;
+    margin-right: 20px;
+}
+
+.step__info{
+    display: flex;
+    flex-direction: column;
+}
+
+.step__header{
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.step__para{
+    color: #918f8f;
+    width: 65%;
+    line-height: 28px;
+}
+
+/* VALUES */
+
+.values__section{
+    width: 50%;
+    margin-right: 50px;
+}
+
+.value{
+    width: 50%;
+}
+
+.values__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.value__header{
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+    height: 50px;
+}
+
+.value__icon{
+    font-size: 20px;
+    border-radius: 50px;
+}
+
+.value__dollar{
+    padding: 8px 12px;
+    color: darkgreen;
+    background-color: rgb(195, 241, 195);
+}
+
+.value__briefcase{
+    padding: 12px;
+    color:firebrick;
+    background-color: rgb(234, 182, 182);
+}
+
+.value__name{
+    margin-left: 16px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.value__para{
+    width: 80%;
 }
