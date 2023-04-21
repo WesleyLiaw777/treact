@@ -65,7 +65,11 @@ section:not(:first-child){
     margin-bottom: 24px;
 }
 
-.name__vert{
+.center__section{
+    text-align: center;
+}
+
+.text__center{
     text-align: center;
 }
 
@@ -97,9 +101,6 @@ section:not(:first-child){
     min-height: 100vh;
 }
 
-.vert__heading{
-    text-align: center;
-}
 
 .learn__more--button{
     background-color: #5015b7;
@@ -107,7 +108,11 @@ section:not(:first-child){
     padding: 12px 24px;
     border-radius: 50px;
     font-weight: 500;
+    transition: all 300ms ease;
+}
 
+.learn__more--button:hover{
+    background-color: #6429c9;
 }
 
 /* NAV */
@@ -563,4 +568,36 @@ hr.solid__row{
 .testimonial__role{
     color:#918f8f;
     font-weight: 500;
+}
+
+/* CLOSING PITCH */
+
+.pitch__row{
+    background-color:#5015b7;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 100px;
+}
+
+.pitch__line{
+    font-size: 30px;
+    font-weight: 600;
+    width: 50%;
+}
+
+.pitch__link{
+    color: white;
+    font-weight: 500;
+    padding: 20px 40px;
+    border-radius: 50px;
+}
+
+.pitch__getstarted{
+    background-color: lightcoral;
+}
+
+.pitch__contactus{
+    border: 1px solid white;
+    margin-left: 40px;
 }
