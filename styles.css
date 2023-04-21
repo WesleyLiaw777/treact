@@ -15,6 +15,10 @@ a{
     color: black;
 }
 
+li{
+    list-style-type: none;
+}
+
 .text__spicer{
     color: #5015b7;
 }
@@ -30,6 +34,12 @@ a{
 
 section:not(:first-child){
     margin-bottom: 200px;
+}
+
+.vert__section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .row{
@@ -380,4 +390,121 @@ nav{
 
 .value__para{
     width: 80%;
+}
+
+/* PRICING */
+
+.pricing__table{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.pricing__column{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    padding: 12px 0px;
+    border: 2px solid #e3dede;
+}
+
+.pricing__business{
+    border: 0px;
+}
+
+.price__name{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 24px;
+}
+
+.price__cost{
+    margin: 16px 0px;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.price__rate{
+    font-weight: bold;
+    color:#a19595;
+}
+
+.price__customer{
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.selling__points{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.selling__point:not(:last-child){
+    margin-bottom: 20px;
+}
+
+.selling__point{
+    font-weight: 500;
+}
+
+hr.solid__row{
+    border: 1px solid lightgrey;
+    opacity: 0.5;
+    width: 100%;
+    margin: 20px 0px;
+}
+
+.selling__point{
+    color:#918f8f;
+}
+
+
+.pricing__personal{
+    border-top: 10px solid #73e8c1;
+}
+
+.pricing__enterprise{
+    border-top: 10px solid orangered;
+}
+
+.pricing__buynow{
+    border-radius: 50px;
+    padding: 16px 60px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: rgb(245, 241, 241);
+    transition: all 200ms ease;
+}
+
+.pricing__buynow:hover{
+    box-shadow: -2px 5px 16px rgba(0,0,0,0.2);
+    /* transform: translateY(-2px); */
+    transform: translate(1px, -1px);
+
+}
+
+.pricing__personal--button{
+    background: linear-gradient(to right, #73e8c1, rgb(150, 254, 219));
+}
+
+.pricing__business{
+    color: white;
+    background: linear-gradient(to right, #1e90ff, #5daaf7);
+}
+
+.business__rate, .business__point{
+    color: white;
+}
+
+.pricing__smallbiz--button{
+    color: #5015b7;
+    background-color: white;
+}
+
+.pricing__enterprise--button{
+    background: linear-gradient(to right, orangered, rgb(255, 166, 133));
 }
