@@ -739,5 +739,7 @@ footer{
 
 /* Phones, tablets */
 @media(max-width: 768px){
-    
+    .nav__link {
+        visibility: hidden;
+    }
 }
