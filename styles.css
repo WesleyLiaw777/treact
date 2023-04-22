@@ -74,7 +74,8 @@ section:not(:first-child){
 }
 
 .section__heading{
-    font-size: 40px;
+    font-size: 48px;
+    font-weight: 600;
     margin-bottom: 24px;    
 }
 
@@ -82,7 +83,7 @@ section:not(:first-child){
     font-weight: 400;
     color: #918f8f;
     font-size: 16px;
-    margin-bottom: 36px;
+    margin-bottom: 44px;
 }
 
 .section__figure{
@@ -260,8 +261,9 @@ nav{
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
-    max-width: 800px;
+    max-width: 850px;
     margin-top: 60px;
+    margin-left: 30px;
 }
 
 .feature{
@@ -285,7 +287,7 @@ nav{
     border: 1px solid lightgrey;
     color: #5015b7;
     padding: 12px;
-    font-size: 16px;
+    font-size: 20px;
     height: 44px;
     width: 44px;
     border-radius: 50px;
@@ -316,6 +318,7 @@ nav{
 
 .steps__figure{
     padding-top: 50px;
+    margin-right: 50px;
 }
 
 .step__list{
@@ -329,7 +332,7 @@ nav{
 
 .step__number{
     color: #918f8f;
-    font-size: 36px;
+    font-size: 30px;
     margin-right: 20px;
 }
 
@@ -339,15 +342,17 @@ nav{
 }
 
 .step__header{
-    margin-bottom: 20px;
+    margin-bottom: 6px;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .step__para{
     color: #918f8f;
     width: 65%;
-    line-height: 28px;
+    line-height: 24px;
+    font-size: 12px;
+    font-weight: 500;
 }
 
 /* VALUES */
@@ -357,14 +362,8 @@ nav{
     margin-right: 50px;
 }
 
-.value{
-    width: 50%;
-}
-
 .values__container{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     margin-bottom: 50px;
 }
 
@@ -400,6 +399,8 @@ nav{
 
 .value__para{
     width: 80%;
+    line-height: 22px;
+    font-size: 14px;
 }
 
 /* PRICING */
@@ -500,7 +501,7 @@ hr.solid__row{
 }
 
 .pricing__buynow:hover{
-    box-shadow: -2px 5px 16px rgba(0,0,0,0.2);
+    box-shadow: -2px 5px 16px rgba(0,0,0,0.15);
     transform: translate(1px, -1px);
 
 }
@@ -529,8 +530,13 @@ hr.solid__row{
 
 /* TESTIMONIALS */
 .test__section{
+    width: 45%;
+}
+
+.test__section--figure{
     width: 50%;
 }
+
 
 .testimonial__review{
     margin-top: 30px;
@@ -681,8 +687,9 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 auto;
     padding-bottom: 90px;
-    max-width: 1200px;
+    max-width: 1100px;
 }
 
 .footer__logo{
@@ -728,4 +735,9 @@ footer{
 
 .fa-facebook-f{
     padding: 6px 10px;
+}
+
+/* Phones, tablets */
+@media(max-width: 768px){
+    
 }
