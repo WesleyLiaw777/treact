@@ -6,8 +6,8 @@
     box-sizing: border-box;
 }
 
-body{
-    margin: 0 40px;
+section{
+    padding: 0 40px;
 }
 
 html{
@@ -85,6 +85,10 @@ section:not(:first-child){
     margin-bottom: 44px;
 }
 
+.section__figure{
+    width: 50%;
+}
+
 .section__img{
     width: 100%;
 }
@@ -100,7 +104,9 @@ section:not(:first-child){
     padding: 12px 24px;
     border-radius: 50px;
     font-weight: 500;
+    font-size: 14px;
     transition: all 300ms ease;
+    max-width: 130px;
 }
 
 .learn__more--button:hover{
@@ -206,6 +212,7 @@ nav{
     height: 320px;
     background-color: white;
     border: 1px solid lightgrey;
+    z-index: 100;
     border-radius: 8px;
     display: none;
     justify-content: center;
@@ -271,6 +278,10 @@ nav{
 
 /* LANDING */
 
+#landing{
+    margin-bottom: 120px;
+}
+
 .main__page{
     display: flex;
 }
@@ -298,6 +309,10 @@ nav{
     border-color: rgb(211, 211, 211, 1);
 }
 
+.landing__figure{
+    width: 60%;
+}
+
 .get__started--button{
     font-weight: 500;
     font-size: 16px;
@@ -322,10 +337,6 @@ nav{
     margin-top: 100px;
 }
 
-.companies__figure{
-    width: 400px;
-}
-
 .companies__img{
     width: 100%;
     opacity: 0.6;
@@ -337,7 +348,6 @@ nav{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 100%;
     max-width: 850px;
     margin-top: 60px;
     margin-left: 30px;
@@ -817,12 +827,183 @@ footer{
 
 /* Phones, tablets */
 @media(max-width: 768px){
+    .section__heading{
+        font-size: 28px;
+    }
+
+    .section__figure{
+        width: 70%;
+        margin-bottom: 40px;
+    }
+
+    .section__info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .section__para{
+        font-size: 14px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+
+    .row{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #quality__work .row,
+    #values .row{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .learn__more--button{
+        margin: 0 auto;
+    }
+
+    nav{
+        margin-bottom: 40px;
+    }
+
     .nav__link,
     .nav__signup {
         display: none;
     }
 
+
+
+    .landing__info{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        
+    }
+
+    .landing__img{
+        width: 100%;
+    }
+
+    .trusted__customers{
+        margin-top: 40px;
+    }
+
+    .companies__figure{
+        margin-bottom: 40px;
+    }
+
     .menu__btn--open{
         display: flex;
     }
+
+    .features__listing{
+        margin-left: 0;
+        margin-top: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature{
+        margin-bottom: 50px;
+        margin-right: 0;
+        width: 60%;
+        justify-content: center;
+    }
+
+    .feature__desc{
+        width: 80%;
+    }
+
+
+
+    .step__list{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .step{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .step__number{
+        margin-right: 0;
+        margin-bottom: 8px;
+    }
+
+    .step__para{
+        margin: 0 auto;
+    }
+
+    .value{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .value:not(:last-child){
+        margin-bottom: 40px;
+    }
+
+    .values__container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .value__header{
+        margin-bottom: 10px;
+    }
+
+    .value__para{
+        margin: 0 auto;
+    }
+
+    .pricing__table{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .pricing__column{
+        margin-right: 0;
+        margin-bottom: 60px;
+    }
+
+    .pitch__line{
+        width: 100%;
+        margin-bottom: 60px;
+    }
+
+    .links__list{
+        margin-top: 40px;
+        flex-wrap: wrap;
+        justify-content:left;
+    }
+
+    .link__group{
+        width: 25%;
+        margin-bottom: 40px;
+        margin-right: 40px;
+    }
+
+    .footer__bottom{
+        flex-direction: column;
+    }
+
+    .footer__copyright{
+        margin: 30px 0;
+    }
+}
+
+/* Small phones */
+@media(max-width: 480px){
+
 }
