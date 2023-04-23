@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+body{
+    margin: 0 40px;
+}
+
 html{
     scroll-behavior: smooth;
 }
@@ -46,16 +50,15 @@ section:not(:first-child){
     width: 100%;
     max-width: 1100px;
     margin: 0 auto;
+    display: flex;
 }
 
 .vert__row{
-    display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .horiz__row{
-    display: flex;
     justify-content: space-between;
 }
 
@@ -84,10 +87,6 @@ section:not(:first-child){
     color: #918f8f;
     font-size: 16px;
     margin-bottom: 44px;
-}
-
-.section__figure{
-    width: 600px;
 }
 
 .section__img{
@@ -190,6 +189,81 @@ nav{
 
 .nav__signup:hover{
     background-color: #410f72;
+}
+
+.menu__btn{
+    border: none;
+    background-color: white;
+    font-size: 20px;
+    transition: all 300ms ease;
+}
+
+.menu__backdrop{
+    position: absolute;
+    top: 20px;
+    right: 16px;
+    left: 16px;
+    height: 320px;
+    background-color: white;
+    border: 1px solid lightgrey;
+    border-radius: 8px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu__close--btn{
+    position: absolute;
+    right: 24px;
+    top: 20px;
+}
+
+.menu__btn:hover{
+    color: #5015b7;
+    cursor: pointer;
+}
+
+.menu__links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.menu__link{
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 300ms;
+    text-decoration: 2px solid transparent underline ;
+    text-underline-offset: 8px;
+    transition: all 300ms ease;
+}
+
+.menu__link:not(:last-child){
+    margin-bottom: 20px;
+}
+
+.menu__link:hover{
+    color: #5015b7;
+    text-decoration-color: #5015b7;
+}
+
+.menu__signup{
+    background-color: #5015b7;
+    font-weight: 600;
+    font-size: 12px;
+    padding: 12px 30px;
+    border-radius: 50px;
+    color: white;
+    transition: all 200ms;
+}
+
+.menu__signup:hover{
+    background-color: #410f72;
+}
+
+.menu--open .menu__backdrop{
+    display: flex;
 }
 
 /* LANDING */
@@ -739,7 +813,8 @@ footer{
 
 /* Phones, tablets */
 @media(max-width: 768px){
-    .nav__link {
-        visibility: hidden;
+    .nav__link,
+    .nav__signup {
+        display: none;
     }
 }

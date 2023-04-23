@@ -7,6 +7,7 @@
     <title>Treact Clone</title>
     <link rel="stylesheet" href="./styles.css">
     <script src="https://kit.fontawesome.com/80f09bcac6.js" crossorigin="anonymous"></script></head>
+    <script src="index.js"></script>
 </head>
 <body>
     <section id="landing">
@@ -25,12 +26,32 @@
                     <a class="nav__link" href="">Pricing</a>
                     <a class="nav__link" href="">Contact Us</a>
                 </div>
-
+                
                 <div class="nav__account">
                     <a class="nav__link nav__login" href="">Login</a>
                     <a class="nav__signup" href="">Sign Up</a>
                 </div>
+
+                <button class="menu__btn" onclick="openMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
             </div>
+
+            <div class="menu__backdrop">
+                <button class="menu__btn menu__close--btn" onclick="closeMenu()">
+                    <i class="fa fa-times"></i>
+                </button>
+
+                <div class="menu__links">
+                    <a class="menu__link" href="">About</a>
+                    <a class="menu__link" href="">Blog</a>
+                    <a class="menu__link" href="">Pricing</a>
+                    <a class="menu__link" href="">Contact Us</a>
+                    <a class="menu__link" href="">Login</a>
+                    <a class="menu__signup" href="">Sign Up</a>
+                </div>
+            </div>
+
         </nav>
 
         <div class="container">
@@ -62,7 +83,7 @@
                 <div class="section__info text__center">
                     <div class="section__name">FEATURES</div>
                     <h1 class="section__heading">We have Amazing <span class="text__spicer">Service.</span></h1>
-                    <div class="section__para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae perferendis delectus fugiat?</div>
+                    <div class="section__para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae perferendis delectus fugiat? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, temporibus!</div>
                 </div>
         
                 <div class="features__listing">
