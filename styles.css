@@ -219,7 +219,8 @@ nav{
     align-items: center;
     transition: all 250ms ease-in-out;
     animation: bounce-in backwards;
-    animation-duration: 400ms;
+    animation-duration: 200ms;
+    animation-timing-function: ease-out;
 }
 
 @keyframes bounce-in{
@@ -227,6 +228,11 @@ nav{
         transform: translateX(100px);
         opacity: 0;
     }
+
+    50%{
+        transform: translateX(-100px);
+    }
+
     100%{
         transform: translateX(0);
         opacity: 1;
@@ -1021,6 +1027,10 @@ footer{
 
     section{
         padding: 0 20px;
+    }
+
+    .menu__close--btn{
+        right: 4px;
     }
 
     .landing__start{
