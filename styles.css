@@ -852,7 +852,7 @@ footer{
 
     .section__figure{
         width: 70%;
-        margin-bottom: 40px;
+        margin: 0 0 40px 0;
     }
 
     .section__info{
@@ -861,6 +861,7 @@ footer{
         justify-content: center;
         text-align: center;
         margin-top: 20px;
+        margin-right: 0;
     }
 
     .section__para{
@@ -875,10 +876,18 @@ footer{
         align-items: center;
     }
 
+    .landing__info{
+        margin-right: 0;
+    }
+
     #quality__work .row,
     #values .row{
         display: flex;
         flex-direction: column-reverse;
+    }
+
+    .work__info{
+        margin-right: 0;
     }
 
     .learn__more--button{
@@ -893,8 +902,6 @@ footer{
     .nav__signup {
         display: none;
     }
-
-
 
     .landing__info{
         width: 80%;
