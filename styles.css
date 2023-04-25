@@ -797,6 +797,7 @@ footer{
     margin: 0 auto;
     padding-bottom: 90px;
     max-width: 1100px;
+    width: 90%;
 }
 
 .footer__logo{
