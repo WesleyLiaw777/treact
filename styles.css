@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
 *{
     font-family: 'Roboto', sans-serif;
     padding: 0;
@@ -37,7 +38,7 @@ li{
 }
 
 section:not(:first-child){
-    margin-bottom: 200px;
+    margin-bottom: 120px;
 }
 
 .vert__section{
@@ -65,7 +66,7 @@ section:not(:first-child){
 .section__name{
     color:#5015b7;
     font-weight: 500;
-    margin-bottom: 24px;
+    margin-bottom: 16px;
 }
 
 .text__center{
@@ -73,16 +74,18 @@ section:not(:first-child){
 }
 
 .section__heading{
+    opacity: 0.75;
     font-size: 48px;
-    font-weight: 600;
-    margin-bottom: 24px;    
+    font-weight: 900;
+    margin-bottom: 16px;  
 }
 
 .section__para{
     font-weight: 400;
-    color: #918f8f;
-    font-size: 16px;
+    color: rgb(124, 139, 161);
+    font-size: 18px;
     margin-bottom: 44px;
+    line-height: 28px;
 }
 
 .section__figure{
@@ -170,6 +173,7 @@ nav{
     font-size: 24px;
     font-weight: 900;
     transition: all 200ms ease;
+    color: #243e63;
 }
 
 .nav__logo:hover .nav__logo--name{
@@ -182,7 +186,7 @@ nav{
 
 .nav__link{
     padding-left: 36px;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 600;
     transition: all 300ms;
     text-decoration: 2px solid transparent underline ;
@@ -206,7 +210,7 @@ nav{
 .nav__signup{
     background-color: #5015b7;
     font-weight: 600;
-    font-size: 12px;
+    font-size: 13px;
     padding: 12px 30px;
     border-radius: 50px;
     color: white;
@@ -320,10 +324,6 @@ nav{
 
 /* LANDING */
 
-#landing{
-    margin-bottom: 120px;
-}
-
 .main__page{
     display: flex;
 }
@@ -337,15 +337,19 @@ nav{
     position: relative;
     display: flex;
     justify-content: left;
+    width: 100%;
 }
 
 .landing__email{
     border: 2px solid lightgrey;
     border-radius: 50px;
-    padding: 18px 200px 18px 34px;
     border-color: #d3d3d34d;
     outline: none;
     transition: all 300ms;
+    padding-left: 20px;
+    height: 60px;
+    max-width: 600px;
+    width: 100%;
 }
 
 
@@ -366,10 +370,10 @@ nav{
     background-color: #5015b7;
     border-radius: 50px;
     right: 0;
-    padding: 16px 12px;
-
+    padding: 14px 0;
+    margin: 3px 8px 8px 0;
     width: 100%;
-    max-width: 150px;
+    max-width: 160px;
 }
 
 .get__started--button:hover{
@@ -395,8 +399,12 @@ nav{
     flex-wrap: wrap;
     justify-content: center;
     max-width: 850px;
-    margin-top: 60px;
-    margin-left: 30px;
+    margin: 60px auto 0;
+}
+
+.features__para{
+    max-width: 500px;
+    margin: 0 auto;
 }
 
 .feature{
@@ -434,16 +442,15 @@ nav{
 }
 
 .feature__desc{
-    font-weight: 500;
     color: #918f8f;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 24px;
 }
 
 /* QUALITY WORK */
 
 .work__info{
-    width: 50%;
+    width: 100%;
     margin-right: 60px;
 }
 
@@ -468,6 +475,7 @@ nav{
 
 .step__list{
     margin-top: 40px;
+    max-width: 500px;
 }
 
 .step{
@@ -476,8 +484,9 @@ nav{
 }
 
 .step__number{
-    color: #918f8f;
-    font-size: 30px;
+    color: #cbd5e0;
+    font-size: 36px;
+    font-weight: 600;
     margin-right: 20px;
 }
 
@@ -487,17 +496,19 @@ nav{
 }
 
 .step__header{
+    color: #243e63;
     margin-bottom: 6px;
-    font-weight: 500;
-    font-size: 16px;
+    font-weight: 600;
+    font-size: 18px;
 }
 
 .step__para{
-    color: #918f8f;
-    width: 65%;
-    line-height: 24px;
-    font-size: 12px;
+    color: #718096;
     font-weight: 500;
+    line-height: 24px;
+    font-size: 14px;
+    font-weight: 500;
+    max-width: 240px;
 }
 
 /* VALUES */
@@ -607,6 +618,7 @@ nav{
 
 .selling__point{
     font-weight: 500;
+    color: #718096;
 }
 
 hr.solid__row{
@@ -750,15 +762,18 @@ hr.solid__row{
     margin-bottom: 8px;
 }
 
+.faq__question--para{
+    color: rgb(124, 139, 161);
+}
+
 /* CLOSING PITCH */
 
 .pitch__row{
-    background-color:#5015b7;
+    background-color: #6415ff;
     display: flex;
     justify-content: space-between;
     color: white;
     padding: 100px;
-    max-width: 1000px;
     border-radius: 6px;
 }
 
@@ -773,6 +788,7 @@ hr.solid__row{
     font-weight: 500;
     padding: 20px 40px;
     border-radius: 50px;
+    cursor: pointer;
 }
 
 .pitch__getstarted{
@@ -788,6 +804,7 @@ hr.solid__row{
     border: 1px solid white;
     margin-left: 40px;
     transition: all 300ms;
+    background-color: #6415ff;
 }
 
 .pitch__contactus:hover{
@@ -798,7 +815,7 @@ hr.solid__row{
 /* FOOTER */
 
 footer{
-    background-color: #5015b7;
+    background-color: #6415ff;
     color: white;
 }
 
@@ -826,8 +843,8 @@ footer{
 .footer__link{
     color: white;
     margin-bottom: 12px;
-    font-size: 12px;
-    font-weight: 500;
+    font-size: 14px;
+    font-weight: 400;
     text-decoration: 2px solid transparent underline;
     transition: all 300ms ease;
     text-underline-offset: 4px;
@@ -870,7 +887,7 @@ footer{
 
 .footer__logo--name{
     font-weight: 900;
-    font-size: 18px;
+    font-size: 24px;
 }
 
 .footer__copyright{
@@ -899,14 +916,59 @@ footer{
     padding: 6px 10px;
 }
 
+
+
+@media(max-width: 1000px){
+    .landing__start{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .landing__email{
+        margin-bottom: 16px;
+    }
+    
+    .get__started--button{
+        position: relative;
+        max-width: 600px;
+    }
+    
+    .pricing__table{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .pricing__column{
+        width: 80%;
+        margin-right: 0;
+        margin-bottom: 60px;
+    }
+
+    .pitch__links{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .pitch__getstarted{
+        margin-bottom: 20px;
+    }
+
+    .pitch__contactus{
+        margin-left: 0;
+    }
+}
+
 /* Phones, tablets */
+
 @media(max-width: 768px){
     .section__heading{
         font-size: 28px;
     }
 
     .section__figure{
-        width: 70%;
+        width: 100%;
         margin: 0 0 40px 0;
     }
 
@@ -993,7 +1055,7 @@ footer{
     .feature{
         margin-bottom: 50px;
         margin-right: 0;
-        width: 60%;
+        width: 100%;
         justify-content: center;
     }
 
@@ -1053,11 +1115,6 @@ footer{
         margin-top: 40px;
     }
 
-    .pricing__column{
-        margin-right: 0;
-        margin-bottom: 60px;
-    }
-
     .pitch__line{
         width: 100%;
         margin-bottom: 60px;
@@ -1087,34 +1144,20 @@ footer{
 /* Small phones */
 @media(max-width: 480px){
 
-    section{
-        padding: 0 20px;
+    .row{
+        width: 100%;
     }
 
     .menu__close--btn{
         right: 4px;
     }
 
-    .landing__start{
-        display: flex;
-        flex-direction: column;
-    }
-
     .landing__email{
-        margin-bottom: 16px;
-    }
-
-    .get__started--button{
-        transform: translateX(0px);
-        position: relative;
+        
     }
 
     .values__section{
         margin-right: 0;
-    }
-
-    .pricing__column{
-        width: 80%;
     }
 
     .price__name{
@@ -1123,6 +1166,10 @@ footer{
 
     .price__cost{
         font-size: 30px;
+    }
+
+    .pricing__column{
+        width: 100%;
     }
 
     .selling__point{
@@ -1168,4 +1215,37 @@ footer{
     .footer__bottom{
         padding-bottom: 40px;
     }   
+}
+
+@media(max-width: 360px){
+
+    .menu__close--btn{
+        right: 20px;
+    }
+
+    .landing__email{
+        height: 50px;
+    }
+
+    .values__section{
+        width: 100%;
+    }
+
+
+    .pitch__line,
+    .faq__questions{
+        font-size: 20px;
+    }
+
+    .faq__question--heading{
+        font-size: 18px;
+    }
+
+    .faq__question--para{
+        font-size: 14px;
+    }
+
+    .link__group{
+        width: 50%;
+    }
 }
