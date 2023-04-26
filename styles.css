@@ -461,6 +461,7 @@ nav{
 /* STEPS */
 
 .steps__figure{
+    position: relative;
     padding-top: 50px;
     margin-right: 50px;
 }
