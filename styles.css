@@ -127,7 +127,10 @@ section:not(:first-child){
 
 .right__blob{
     right: 0;
-    transform: translate(125px, 1000px);
+}
+
+.feature__blob{
+    bottom: 0;
 }
 
 .pricing__blob{
@@ -446,9 +449,8 @@ nav{
 
 .grid {
     position: absolute;
-    z-index: -1;
     bottom: 0;
-    right: 0px;
+    right: 0;
     width: 80px;
     height: 80px;
     color: #6415ff;
