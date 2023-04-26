@@ -16,7 +16,7 @@ html{
 
 a{
     text-decoration: none;
-    color: black;
+    color: #243e63;
 }
 
 li{
@@ -24,7 +24,7 @@ li{
 }
 
 .text__spicer{
-    color: #5015b7;
+    color: #6415ff;
 }
 
 .detail__para{
@@ -113,6 +113,27 @@ section:not(:first-child){
     background-color: #6429c9;
 }
 
+.blob{
+    position: absolute;
+    opacity: 0.5;
+    height: 250px;
+    width: 250px;
+}
+
+.left__blob{
+    left: 0;
+    transform: translateX(-125px);
+}
+
+.right__blob{
+    right: 0;
+    transform: translate(125px, 1000px);
+}
+
+.pricing__blob{
+    transform: translate(-125px, -125px);
+}
+
 /* NAV */
 
 nav{
@@ -143,7 +164,7 @@ nav{
 
 .nav__logo--name{
     padding-left: 12px;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 900;
     transition: all 200ms ease;
 }
@@ -159,7 +180,7 @@ nav{
 .nav__link{
     padding-left: 36px;
     font-size: 12px;
-    font-weight: bold;
+    font-weight: 600;
     transition: all 300ms;
     text-decoration: 2px solid transparent underline ;
     text-underline-offset: 8px;
@@ -294,7 +315,6 @@ nav{
 }
 
 
-
 /* LANDING */
 
 #landing{
@@ -321,11 +341,14 @@ nav{
     border-radius: 50px;
     padding: 18px 200px 18px 34px;
     border-color: #d3d3d34d;
+    outline: none;
     transition: all 300ms;
 }
 
+
 .landing__email:hover{
     border-color: rgb(211, 211, 211, 1);
+    
 }
 
 .landing__figure{
@@ -333,16 +356,17 @@ nav{
 }
 
 .get__started--button{
+    position: absolute;
     font-weight: 500;
     font-size: 16px;
-    background-color: #5015b7;
     color: white;
+    background-color: #5015b7;
     border-radius: 50px;
-    padding: 12px 28px;
-    position: absolute;
-    top: 10%;
-    transform: translateX(260px);
-    transform: all 300ms;
+    right: 0;
+    padding: 16px 12px;
+
+    width: 100%;
+    max-width: 150px;
 }
 
 .get__started--button:hover{
@@ -418,6 +442,18 @@ nav{
 .work__info{
     width: 50%;
     margin-right: 60px;
+}
+
+.grid {
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    right: 0px;
+    width: 80px;
+    height: 80px;
+    color: #6415ff;
+    fill: currentcolor;
+    transform: matrix(1, 0, 0, 1, 40, 35);
 }
 
 /* STEPS */
@@ -694,6 +730,21 @@ hr.solid__row{
 .testimonial__role{
     color:#918f8f;
     font-weight: 500;
+}
+
+/* FAQS */
+
+.faq__questions{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.faq__question{
+    margin-bottom: 24px;
+}
+
+.faq__question--heading{
+    margin-bottom: 8px;
 }
 
 /* CLOSING PITCH */
