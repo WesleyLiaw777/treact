@@ -871,10 +871,10 @@ hr.solid__row{
 .pitch__row{
     background-color: #6415ff;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     color: white;
     border-radius: 6px;
-    padding: 100px 80px;
+    padding: 40px 0;
     position: relative;
 }
 
@@ -924,7 +924,7 @@ footer{
 }
 
 .footer__row{
-    max-width: 1200px;
+    max-width: 1400px;
     position: relative;
 }
 
@@ -1050,10 +1050,20 @@ footer{
         margin-bottom: 60px;
     }
 
+    .pitch__row{
+        justify-content: space-between;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .pitch__line{
+        display: flex;
+        align-items: center;
+    }
+
     .pitch__links{
         display: flex;
         flex-direction: column;
-        margin: 0 auto;
     }
 
     .pitch__getstarted{
@@ -1221,8 +1231,8 @@ footer{
     }
 
     .pitch__line{
-        width: 100%;
-        margin-bottom: 60px;
+        width: 55%;
+        font-size: 20px;
     }
 
     .links__list{
@@ -1282,7 +1292,7 @@ footer{
     }
 
     .pitch__line{
-        width: 100%;
+        font-size: 20px;
     }
 
     .pitch__links{
@@ -1332,15 +1342,19 @@ footer{
         width: 100%;
     }
 
-
-    .pitch__line,
-    .faq__questions{
-        font-size: 20px;
+    .pitch__row{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 
-    .pitch__row{
-        width: 400px;
-        margin: 0 auto;
+    .pitch__line{
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .faq__questions{
+        font-size: 20px;
     }
 
     .faq__question--heading{
