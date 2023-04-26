@@ -1257,10 +1257,6 @@ footer{
         right: 4px;
     }
 
-    .landing__email{
-        
-    }
-
     .values__section{
         margin-right: 0;
     }
@@ -1340,6 +1336,11 @@ footer{
     .pitch__line,
     .faq__questions{
         font-size: 20px;
+    }
+
+    .pitch__row{
+        width: 400px;
+        margin: 0 auto;
     }
 
     .faq__question--heading{
